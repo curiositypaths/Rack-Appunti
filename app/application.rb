@@ -1,5 +1,8 @@
 class AppuntiApp
   def self.call(env)
-    [ 200, { }, ['Welcome to your notebook'] ]
+    request = Rack::Request.new env
+    response = Rack::Response.new
+    response.write 'Welcome to your notebook'
+    response.finish
   end
 end
