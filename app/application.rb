@@ -30,8 +30,11 @@ class AppuntiApp
 
   # Application logic methods
   def route_response
-    @app_name = 'Notebook'
-    render 'index'
+    if @request.path == '/notes/new'
+      render 'notes/new'
+    else
+      render 'index'
+    end
   end
 
 end
