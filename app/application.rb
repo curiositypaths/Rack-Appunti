@@ -33,4 +33,5 @@ class AppuntiApp
     @app_name = 'Notebook'
     render 'index'
   end
+
 end
