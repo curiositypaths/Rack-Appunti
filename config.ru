@@ -1,3 +1,3 @@
 require_relative "./config/environment.rb"
 
-run AppuntiApp
+run AppuntiApp.new
